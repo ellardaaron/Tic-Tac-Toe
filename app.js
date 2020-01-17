@@ -23,82 +23,105 @@ function checkWin() {
     //Top Horizontal Row Win
     if (makingMarks[0].textContent === "X" && makingMarks[1].textContent === "X" && makingMarks[2].textContent === "X" || makingMarks[0].textContent === "O" && makingMarks[1].textContent === "O" && makingMarks[2].textContent === "O") {
         if (turns % 2 === 0) {
-            alert("O Wins!")
+            alert("O Wins!");
+            turns = 0;
         } else {
-            alert("X Wins!")
+            alert("X Wins!");
+            turns = 0;
         }
     }
-    
+
     //Middle Horizontal Line Win
     if (makingMarks[3].textContent === "X" && makingMarks[4].textContent === "X" && makingMarks[5].textContent === "X" || makingMarks[3].textContent === "O" && makingMarks[4].textContent === "O" && makingMarks[5].textContent === "O") {
         if (turns % 2 === 0) {
-            alert("O Wins!")
+            alert("O Wins!");
+            turns = 0;
         } else {
-            alert("X Wins!")
+            alert("X Wins!");
+            turns = 0;
         }
     }
 
-    // //Middle Horizontal Row Win
-    // if (makingMarks[3].textContent === makingMarks[4].textContent && makingMarks[4].textContent === makingMarks[5].textContent) {
-    //     if (turns % 2 === 0) {
-    //         alert("O Wins!")
-    //     } else {
-    //         alert("X Wins!")
-    //     }
-    // }
+    //Bottom Horizontal Row Win
+    if (makingMarks[6].textContent === "X" && makingMarks[7].textContent === "X" && makingMarks[8].textContent === "X" || makingMarks[6].textContent === "O" && makingMarks[7].textContent === "O" && makingMarks[8].textContent === "O") {
+        if (turns % 2 === 0) {
+            alert("O Wins!");
+            turns = 0;
+        } else {
+            alert("X Wins!");
+            turns = 0;
+        }
+    }
 
-    // //Bottom Horizontal Row Win
-    // if (makingMarks[6].textContent === makingMarks[7].textContent && makingMarks[7].textContent === makingMarks[8].textContent) {
-    //     if (turns % 2 === 0) {
-    //         alert("O Wins!")
-    //     } else {
-    //         alert("X Wins!")
-    //     }
-    // }
+    //First Vertical Column Win
+    if (makingMarks[0].textContent === "X" && makingMarks[3].textContent === "X" && makingMarks[6].textContent === "X" || makingMarks[0].textContent === "O" && makingMarks[3].textContent === "O" && makingMarks[6].textContent === "O") {
+        if (turns % 2 === 0) {
+            alert("O Wins!");
+            turns = 0;
+        } else {
+            alert("X Wins!");
+            turns = 0;
+        }
+    }
 
-    // //First Vertical Column Win
-    // if (makingMarks[0].textContent === makingMarks[3].textContent && makingMarks[3].textContent === makingMarks[6].textContent) {
-    //     if (turns % 2 === 0) {
-    //         alert("O Wins!")
-    //     } else {
-    //         alert("X Wins!")
-    //     }
-    // }
+    //Second Vertical Column Win
+    if (makingMarks[1].textContent === "X" && makingMarks[4].textContent === "X" && makingMarks[7].textContent === "X" || makingMarks[1].textContent === "O" && makingMarks[4].textContent === "O" && makingMarks[7].textContent === "O") {
+        if (turns % 2 === 0) {
+            alert("O Wins!");
+            turns = 0;
+        } else {
+            alert("X Wins!");
+            turns =0;
+        }
+    }
 
-    // //Second Vertical Column Win
-    // if (makingMarks[1].textContent === makingMarks[4].textContent && makingMarks[4].textContent === makingMarks[7].textContent) {
-    //     if (turns % 2 === 0) {
-    //         alert("O Wins!")
-    //     } else {
-    //         alert("X Wins!")
-    //     }
-    // }
 
-    // //Third Vertical Column Win
-    // if (makingMarks[2].textContent === makingMarks[5].textContent && makingMarks[5].textContent === makingMarks[8].textContent) {
-    //     if (turns % 2 === 0) {
-    //         alert("O Wins!")
-    //     } else {
-    //         alert("X Wins!")
-    //     }
-    // }
+    //Third Vertical Column Win
+    if (makingMarks[2].textContent === "X" && makingMarks[5].textContent === "X" && makingMarks[8].textContent === "X" || makingMarks[2].textContent === "O" && makingMarks[5].textContent === "O" && makingMarks[8].textContent === "O") {
+        if (turns % 2 === 0) {
+            alert("O Wins!");
+            turns = 0;
+        } else {
+            alert("X Wins!");
+            turns = 0;
+        }
+    }
 
-    // // Top Left Corner to Bottom Right Corner Diagonal Win
-    // if (makingMarks[0].textContent === makingMarks[4].textContent && makingMarks[4].textContent === makingMarks[8].textContent) {
-    //     if (turns % 2 === 0) {
-    //         alert("O Wins!")
-    //     } else {
-    //         alert("X Wins!")
-    //     }
-    // }
+    //Top Left Corner to Bottom Right Corner Diagonal Win
+    if (makingMarks[0].textContent === "X" && makingMarks[4].textContent === "X" && makingMarks[8].textContent === "X" || makingMarks[0].textContent === "O" && makingMarks[4].textContent === "O" && makingMarks[8].textContent === "O") {
+        if (turns % 2 === 0) {
+            alert("O Wins!");
+            turns = 0;
+        } else {
+            alert("X Wins!");
+            turns = 0;
+        }
+    }
 
-    // // Top Right Corner to Bottom Left Cor
-    // if (makingMarks[2].textContent === makingMarks[4].textContent && makingMarks[4].textContent === makingMarks[6].textContent) {
-    //     if (turns % 2 === 0) {
-    //         alert("O Wins!")
-    //     } else {
-    //         alert("X Wins!")
-    //     }
-    // }
+    //Top Right Corner to Bottom Left Corner Diagonal Win
+    if (makingMarks[2].textContent === "X" && makingMarks[4].textContent === "X" && makingMarks[6].textContent === "X" || makingMarks[2].textContent === "O" && makingMarks[4].textContent === "O" && makingMarks[6].textContent === "O") {
+        if (turns % 2 === 0) {
+            alert("O Wins!");
+            turns = 0;
+        } else {
+            alert("X Wins!");
+            turns = 0;
+        }
+    }
+
+    if (turns === 9) {
+        alert("Everybody Loses!")
+    }
 }
 
+//This is the code for the restart button
+
+let btn = document.querySelector('button');
+
+btn.addEventListener("click", function(){
+    turns = 0;
+    makingMarks.forEach(function(cell) {
+        cell.textContent = " "
+    });
+    
+});

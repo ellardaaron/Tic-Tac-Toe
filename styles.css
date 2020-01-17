@@ -9,11 +9,11 @@ div .row {
     width: 302px;
     clear: both;
     margin: 0, auto;
-   
+ 
 }
 
 .top{
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid black;
     float: left;
     width: 33%;
     height: 100%;
@@ -28,7 +28,7 @@ div .row {
 
 .bottom{
     float: left;
-    border-top: 1px solid blue;
+    border-top: 1px solid black;
     width: 33%;
     height: 100%;
 }
@@ -38,14 +38,53 @@ div .row {
 }
 
 .left{
-    border-right: 1px solid purple;
+    border-right: 1px solid black;
 
 }
 
 .right{
-    border-left: 1px solid red;
+    border-left: 1px solid black;
 }
 
 div .row{
-    cursor: pointer
+    cursor: pointer;
+    color: #588443;
+    font-size: 100px;
+}
+
+
+/* Bellow is experimental code that might cause problems */
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin:auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.restartButton {
+    background-color: #588443;
+    display: block;
+    width: 100%;
+    margin-top: 400px;
+    font-size: 40px;
+    font-family: 'Russo One', sans-serif;
+    border: 10px solid #9E593A;
+    border-radius: 10px;
+}
+
+body {
+background: url(./babyYoda.jpg);
+background-size: cover;
+font-family: 'Russo One', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
 }
